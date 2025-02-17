@@ -12,12 +12,12 @@ import { useNavigate } from "react-router-dom"
 const Navbar = () => {
     const navigate = useNavigate()
   return (
-    <div className='border-b py-4 px-5 flex items-center justify-between'>
+    <div className='border-b py-4 px-5 flex items-center justify-between bg-green-900 text-white shadow-md'>
         <div className='flex items-center gap-3'>
-            <p  onClick={()=>navigate("/")} className='cursor-pointer'> Project Management</p>
+            <Button  onClick={()=>navigate("/")} className='cursor-pointer hover:bg-blue-700' variant='ghost'> Project Management</Button>
             <Dialog>
                 <DialogTrigger>
-                    <Button variant='ghost'>New Project</Button>
+                    <Button variant='ghost' className="text-white  hover:bg-blue-700">New Project</Button>
                 </DialogTrigger>
 
                 <DialogContent>
@@ -30,7 +30,7 @@ const Navbar = () => {
 
             </Dialog>
 
-            <Button onClick={() =>navigate("/upgrade_plan")} variant='ghost'>Upgrade</Button>
+            <Button onClick={() =>navigate("/upgrade_plan")} variant='ghost' className="hover:bg-blue-700">Upgrade</Button>
 
         </div>
 
@@ -39,13 +39,13 @@ const Navbar = () => {
 
                 <DropdownMenuTrigger>
 
-                    <Button variant="outline" size="icon" className="rounded-full border-2 border-gray-500">
+                    <Button variant="outline" size="icon" className="rounded-full border-2 border-gray-500 bg-blue-800">
                         <PersonIcon/>
                     </Button>
                 </DropdownMenuTrigger>
 
-                <DropdownMenuContent>
-                    <DropdownMenuItem>
+                <DropdownMenuContent className="bg-gray-800 text-white">
+                    <DropdownMenuItem className="hover:bg-gray-700 cursor-pointer">
                         Logout
                     </DropdownMenuItem>
                 </DropdownMenuContent>

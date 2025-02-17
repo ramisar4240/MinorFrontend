@@ -131,7 +131,7 @@ const IssueDetails = () => {
           <div className="flex items-center gap-3">
                   <Avatar className="h-8 w-8 text-xs">
                     <AvatarFallback>
-                      
+                      S
                     </AvatarFallback>
                   </Avatar>
                   <p>Shyam</p>

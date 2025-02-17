@@ -26,7 +26,7 @@ const IssueList = ({title,status}) => {
   
                   <CardFooter>
                       <DialogTrigger>
-                          <Button variant="outline" className="w-full flex items-center gap-2">
+                          <Button variant="outline" className="w-full flex items-center gap-2 bg-blue-800 hover:bg-yellow-800">
                               <PlusIcon/>
                               Create Issue
                           </Button>
@@ -39,7 +39,7 @@ const IssueList = ({title,status}) => {
               <DialogHeader>
                   <DialogTitle>Create New Issue</DialogTitle>
               </DialogHeader>
-              <CreateIssueForm/>
+              <CreateIssueForm className="bg-green-800"/>
           </DialogContent>
   
         </Dialog>

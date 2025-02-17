@@ -37,7 +37,7 @@ const ProjectList = () => {
     <>
     <div className='relative px-5 lg:px-0 lg:flex gap-5 justify-center py-5'>
 <section className='filterSection'>
-     <Card className='p-5 sticky top-10'>
+     <Card className='p-5 sticky top-10 bg-green-800'>
 
         <div className='flex justify-between lg:w-[20rem]'>
             <p className='text-xl -tracking-wider'>filters</p>

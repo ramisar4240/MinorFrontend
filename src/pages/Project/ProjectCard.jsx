@@ -12,12 +12,12 @@ import { useNavigate } from "react-router-dom"
 const ProjectCard = () => {
     const navigate=useNavigate();
     return (
-     <Card className="p-5 w-full lg:max-w-3xl">
+     <Card className="p-5 w-full lg:max-w-3xl bg-green-800">
    <div className='space-y-5'>
     <div className='space-y-2'>
       <div className='flex justify-between'>
         <div className='flex items-center gap-5'>
-          <h1  onClick={()=> navigate("/project/3")} className='cursor pointer font-bold text-lg'>
+          <h1  onClick={()=> navigate("/project/3")} className='cursor pointer font-bold text-lg '>
             Create Ecommerce Project
   
           </h1>
@@ -27,18 +27,18 @@ const ProjectCard = () => {
   
         </div>
         <div>
-          <DropdownMenu>
+          <DropdownMenu >
             <DropdownMenuTrigger>
               <Button className="rounded-full" varient='ghost' size='icon'>
                 <DotsVerticalIcon/>
               </Button >
             </DropdownMenuTrigger>
   
-            <DropdownMenuContent>
-              <DropdownMenuItem>
+            <DropdownMenuContent className="hover:bg-green-800" >
+              <DropdownMenuItem >
                 Update
               </DropdownMenuItem>
-              <DropdownMenuItem>
+              <DropdownMenuItem >
                 Delete
               </DropdownMenuItem>
             </DropdownMenuContent>

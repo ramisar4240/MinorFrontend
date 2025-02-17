@@ -10,7 +10,7 @@ const IssueCard = () => {
 
     const navigate=useNavigate();
   return (
-    <Card className="rounded-md py-1 pb-2">
+    <Card className="rounded-md py-1 pb-2 bg-green-800">
         <CardHeader className="py-0 pb-1">
             <div className="flex justify-between items-center">
                 <CardTitle className="cursor-pointer"onClick={()=>navigate("/project/3/issue/10")}>
@@ -19,7 +19,7 @@ const IssueCard = () => {
 
                 <DropdownMenu>
                     <DropdownMenuTrigger>
-                     <Button className="rounded-full" size='icon' variant="ghost"><DotsVerticalIcon/></Button>   
+                     <Button className="rounded-full hover:bg-yellow-800" size='icon' variant="ghost"><DotsVerticalIcon/></Button>   
                     </DropdownMenuTrigger>
 
                     <DropdownMenuContent>
@@ -42,8 +42,8 @@ const IssueCard = () => {
                 <DropdownMenu className="w-[30rem] border border-red-400">
                     <DropdownMenuTrigger>
                         <Button size="icon" className="bg-gray-900  hover:text-black text-white rounded-full">
-                            <Avatar>
-                                <AvatarFallback>
+                            <Avatar >
+                                <AvatarFallback className="bg-blue-800 hover:bg-yellow-800">
                                     <PersonIcon/>
                                 </AvatarFallback>
                             </Avatar>
